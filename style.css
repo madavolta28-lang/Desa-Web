@@ -103,7 +103,7 @@ nav a:hover{
     linear-gradient(
     rgba(0,0,0,.25),
     rgba(0,0,0,.35)),
-    url("images/desa.jpeg");
+    url("desa.jpeg");
 
     background-size:cover;
     background-position:center;
