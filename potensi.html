@@ -38,27 +38,44 @@
 
 <div class="card">
 <h3>Pertanian</h3>
-<img src="pertanian.jpeg" alt="Pertanian">
+<img src="pertanian.jpeg" alt="Pertanian" onclick="openImage(this.src)">
 </div>
 
 <div class="card">
 <h3>Peternakan</h3>
-<img src="peternakan.jpeg" alt="Peternakan">
+<img src="peternakan.jpeg" alt="Peternakan" onclick="openImage(this.src)">
 </div>
 
 <div class="card">
 <h3>UMKM</h3>
-<img src="umkm.jpeg" alt="UMKM">
+<img src="umkm.jpeg" alt="UMKM" onclick="openImage(this.src)">
 </div>
 
 <div class="card">
 <h3>Pendidikan</h3>
-<img src="pendidikan.jpeg" alt="Pendidikan">
+<img src="pendidikan.jpeg" alt="Pendidikan" onclick="openImage(this.src)">
 </div>
 
 </div>
 
 </section>
+  
+<!-- Popup Gambar -->
+<div id="popup" class="popup" onclick="closeImage()">
+    <img id="popup-img">
+    <span style="color:white;position:absolute;top:20px;right:30px;font-size:40px;">✕</span>
+</div>
 
+<script>
+function openImage(src){
+    document.getElementById("popup").style.display = "flex";
+    document.getElementById("popup-img").src = src;
+}
+
+function closeImage(){
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+  
 </body>
 </html>
