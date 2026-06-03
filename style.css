@@ -909,47 +909,143 @@ footer p{
     max-height:90%;
     border-radius:12px;
 }
-/* Tampilan HP */
-@media (max-width: 768px){
+/* ================= RESPONSIVE SEMUA DEVICE ================= */
 
-    header{
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-    }
-
-    nav{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    nav a{
-        font-size: 14px;
-    }
+/* Tablet */
+@media (max-width:1024px){
 
     .hero h1{
-        font-size: 2rem;
+        font-size:60px;
     }
 
     .hero p{
-        font-size: 1rem;
-        padding: 0 15px;
+        font-size:20px;
     }
 
-    .logo img,
-    .logo-klaten img{
-        width: 50px;
-        height: 50px;
+    .logo span{
+        font-size:28px;
+    }
+}
+
+/* HP */
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        flex-direction:column;
+        text-align:center;
+        gap:8px;
+    }
+
+    .logo span{
+        font-size:22px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:8px;
+    }
+
+    nav a{
+        margin:0;
+        font-size:13px;
+        padding:8px 10px;
+    }
+
+    .hero{
+        min-height:80vh;
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:36px;
+        letter-spacing:1px;
+    }
+
+    .hero p{
+        font-size:16px;
+        line-height:1.6;
+        padding:15px;
+    }
+
+    .badge-desa{
+        font-size:12px;
+        padding:8px 15px;
+    }
+
+    .hero button{
+        width:100%;
+        max-width:250px;
+    }
+
+    .hero::before{
+        display:none;
+    }
+
+    section{
+        padding:60px 20px;
+    }
+
+    section h2{
+        font-size:28px;
+    }
+
+    .profil-card,
+    .box,
+    .card{
+        padding:20px;
+    }
+
+    .profil-card h3,
+    .box h3{
+        font-size:22px;
     }
 
     .grid{
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
     }
 
-    .card{
-        width: 100%;
+    #potensi img,
+    #kegiatan img{
+        height:200px;
     }
 
+    footer h2{
+        font-size:24px;
+    }
+
+    footer p{
+        font-size:14px;
+    }
+}
+
+/* HP kecil */
+@media (max-width:480px){
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .logo span{
+        font-size:18px;
+    }
+
+    nav a{
+        font-size:12px;
+        padding:6px 8px;
+    }
+
+    section h2{
+        font-size:24px;
+    }
 }
