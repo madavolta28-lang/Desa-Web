@@ -1012,9 +1012,11 @@ footer p{
     }
 
     #potensi img,
-    #kegiatan img{
-        height:200px;
-    }
+#kegiatan img{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+}
 
     footer h2{
         font-size:24px;
