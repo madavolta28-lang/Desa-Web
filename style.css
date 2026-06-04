@@ -891,3 +891,29 @@ footer p{
     max-height:90%;
     border-radius:12px;
 }
+.card p{
+    color:#555;
+}
+
+/* Footer */
+.footer{
+    margin-top:50px;
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+.footer h3{
+    margin-bottom:15px;
+}
+
+.footer p{
+    margin:8px 0;
+}
+
+.copyright{
+    margin-top:15px;
+    font-size:14px;
+    opacity:0.8;
+}
