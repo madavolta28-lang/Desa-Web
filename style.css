@@ -374,13 +374,6 @@ section h2::after{
     overflow:hidden;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-
-    box-shadow:
-    0 20px 40px rgba(37,99,235,.18);
-}
-
 .card h3{
     color:#2563eb;
 
@@ -408,10 +401,6 @@ section h2::after{
     0 15px 40px rgba(37,99,235,.08);
 
     transition:.4s;
-}
-
-.profil-card:hover{
-    transform:translateY(-5px);
 }
 
 .profil-card h3{
